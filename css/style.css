@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: #e9ecf4;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 1024px;
+    max-height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 2fr;
+    grid-template-rows: auto;
+}
+
+.container .header,
+.container .main {
+    /*background: #fff;*/
+    padding: 4%;
+    /*border-radius: 4px;*/
+}
+
+
+.header {
+    background: linear-gradient(90.33deg, rgba(98, 0, 238, 0.2) 0.21%, rgba(98, 0, 238, 0.076) 152.04%), url('../src/render3_final.png') no-repeat fixed left top;
+    background-size: contain;
+}
+
+
+/*informacion de usuario*/
+
+.main {
+
+    border-radius: 50px 0px 0px 50px;
+    background: linear-gradient(179.7deg, rgba(0, 0, 0, 0.2) 0.89%, rgba(0, 0, 0, 0) 99.74%), #DDDDDD;
+    background-blend-mode: hard-light, normal;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 6fr 1fr 1fr 1fr;
+    grid-template-areas: "logo"
+                         "tittle"
+                         "form"
+                         "message1"
+                         "create-account"
+                         "message2";
+    justify-items: start;
+    align-items: start;
+
+
+
+}
+
+
+.main .logo {
+    justify-self: end;
+    align-self: start;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    color: #3D420F;
+}
+
+.main .tittle {
+    justify-self: stretch;
+    align-self: start;
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    color: #3D420F;
+    border-bottom: 3px solid #3D420F;
+}
+
+.main .form {
+    text-align: center;
+    justify-self: center;
+    align-self: start;
+    padding: 4px;
+    margin: 30px 0px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    color: #3D420F;
+}
+
+
+.main .create-account {
+
+    justify-self: center;
+    align-self: center;
+
+    background: #D1DD5E;
+    padding: 10px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.main .element {
+    display: flex;
+    flex-flow: column;
+    margin: 10px 0px;
+}
+
+.main .element label{
+
+    /* Paragraph light */
+
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 20px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* Primary/02 */
+
+    color: #3D420F;
+
+}
+
+.main .element input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #3D420F ;
+    margin: 4px 0 4px 0;
+
+}
+
+
+.main input[type="submit"]{
+    /* Paragraph Bold */
+
+    font-family: 'Mulish';
+    /*font-style: normal;*/
+    /*font-weight: 700;*/
+    /*font-size: 16px;*/
+    /*line-height: 20px;*/
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    justify-self: center;
+    align-self: center;
+
+    /* Primary/02 */
+
+    color: #3D420F;
+
+    background: transparent;
+    border: none;
+}
+
+.main article{
+    /* Paragraph light */
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+
+    /* Primary/02 */
+
+    color: #3D420F;
+}
+
+.main .message2 {
+    align-items: center;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    color: #3D420F;
+    margin-top: 50px;
+}
